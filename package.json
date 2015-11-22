@@ -1,11 +1,8 @@
 {
   "name": "peloton-to-tcx",
   "version": "1.0.0",
-  "description": "",
+  "description": "Convert Peloton data to TCX files",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "test": "mocha --reporter spec",
     "testcover": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec"
