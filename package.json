@@ -1,0 +1,23 @@
+{
+  "name": "peloton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "testcover": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec"
+  },
+  "author": "Jarrett Widman",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "dotenv": "^1.2.0",
+    "request": "^2.67.0",
+    "xmlbuilder": "^4.1.0"
+  }
+}
