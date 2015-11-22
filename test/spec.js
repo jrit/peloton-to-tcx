@@ -31,7 +31,7 @@ it('authenticates to API', function (done)
 
 it('gets workout history from API', function (done)
 {
-    pelotonApi.getWorkoutHistory(userId, sessionId, function (err, history)
+    pelotonApi.getWorkoutHistory(userId, sessionId, 1, function (err, history)
     {
         assert.equal(err, null);
         workoutId = history.data[0].id;

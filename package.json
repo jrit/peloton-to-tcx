@@ -1,5 +1,5 @@
 {
-  "name": "peloton",
+  "name": "peloton-to-tcx",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -16,7 +16,9 @@
     "mocha": "^2.3.4"
   },
   "dependencies": {
+    "commander": "^2.9.0",
     "dotenv": "^1.2.0",
+    "mkdirp": "^0.5.1",
     "request": "^2.67.0",
     "xmlbuilder": "^4.1.0"
   }

@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+var p2t = require('..');
+var program = require('commander');
+var pkg = require('../package');
+
+program.name = pkg.name;
+program.version(pkg.version)
+  .usage('[options]')
+  .option('--limit [number]', 'Number of recent workouts to convert')
+  .option('--results-directory [value]', 'Directory where TCX files should be saved, default is "./results"')
+  .option('--p-login [value]', 'Peloton username or email')
+  .option('--p-password [value]', 'Peloton password');
+
+program.parse(process.argv);
+
+p2t(program, function (err)
+{
+    if (err) {
+        console.error(err.stack);
+        process.exit(1);
+    }
+});
