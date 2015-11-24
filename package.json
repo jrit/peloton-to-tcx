@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Convert Peloton data to TCX files",
   "main": "index.js",
-  "bin": { "pt2": "./bin/p2t" },
+  "bin": { "p2t": "./bin/p2t" },
   "scripts": {
     "test": "mocha --reporter spec",
     "testcover": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec"
