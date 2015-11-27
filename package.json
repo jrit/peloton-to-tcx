@@ -1,6 +1,6 @@
 {
   "name": "peloton-to-tcx",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert Peloton data to TCX files",
   "main": "index.js",
   "bin": { "p2t": "./bin/p2t" },

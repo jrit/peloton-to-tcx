@@ -5,9 +5,14 @@ Get's Peloton workout data and creates a TCX file that can be uploaded to Strava
 This package can be required in another node module or used from CLI.
 
 
+## Supported Fields
+
+Cadence, Speed, Heart Rate, and Power are all supported. Power is an extension that is used by Strava, so it may not appear if you import the TCX to somewhere else.
+
+
 ## Storing Login Info, Optional
 
-To avoid having to enter a login and password every time, you can store these in a file named `.env` next to the `package.json` file. The contents will look something like:
+To avoid having to enter a login and password every time, you can create environment variables for `PELOTON_LOGIN` and `PELOTON_PASSWORD`. Or, you can store these in a file named `.env` next to the `package.json` file. The contents will look something like:
 
 ```
 PELOTON_LOGIN=myusername
