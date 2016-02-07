@@ -16,7 +16,7 @@ function p2t(options, done)
     options = options || {};
     var login = options.pLogin || process.env.PELOTON_LOGIN;
     var password = options.pPassword || process.env.PELOTON_PASSWORD;
-    var resultsDirectory = options.resultsDirectory || './results';
+    var resultsDirectory = options.resultsDirectory || './peloton-results';
 
     var userId = null;
     var sessionId = null;
@@ -26,9 +26,10 @@ function p2t(options, done)
         {
             pelotonApi.authenticate(login, password, function (err, res)
             {
+                if (err){ return done(err); }
                 userId = res.user_id;
                 sessionId = res.session_id;
-                done(err);
+                done();
             });
         },
         function (done)
