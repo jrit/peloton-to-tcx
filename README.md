@@ -1,5 +1,12 @@
 # peloton-to-tcx
 
+- - -
+## **End of Life**: Peloton added direct Strava support which makes this module unnecessary. This will probably stop working next time Peloton's API changes
+- - -
+
+
+## What is it
+
 Get's Peloton workout data and creates a TCX file that can be uploaded to Strava or elsewhere.
 
 This package can be required in another node module or used from CLI.
